@@ -40,6 +40,17 @@
   --transition-smooth: .15s linear;
 }
 
+.form-container {
+  background: var(--magnolia);
+  display: grid;
+  height: 100%;
+  padding: 1em;
+  place-items: center;
+
+  @media (max-width: 830px) {
+    padding: unset;
+  }
+}
 
 #form-plan {
   background: white;
@@ -69,18 +80,6 @@
 
   :focus-visible {
     outline-color: var(--purplish-blue);
-  }
-
-  :has(> &) {
-    background: var(--magnolia);
-    display: grid;
-    height: 100%;
-    padding: 1em;
-    place-items: center;
-
-    @media (max-width: 830px) {
-      padding: unset;
-    }
   }
 
   @scope (&) {

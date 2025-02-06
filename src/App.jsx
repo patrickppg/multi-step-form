@@ -71,7 +71,7 @@ function App() {
   }, [])
 
   return (
-    <div>
+    <div className='form-container'>
       <form id='form-plan' ref={formRef} onSubmit={handleSubmit}>
         <Overview currentStep={currentStep} />
         <Steps
